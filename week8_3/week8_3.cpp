@@ -34,6 +34,7 @@ int main()
             {
                 printf(" %d", number[i]);
             }
+            break;
         }
 
     } 
