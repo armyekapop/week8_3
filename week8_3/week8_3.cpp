@@ -14,7 +14,7 @@ int main()
     }
 
     i = 0;
-    do
+    while(1)
     {
         if (i < size - 1 && number[i] > number[i + 1])
         {
@@ -27,15 +27,15 @@ int main()
         {
             i++;
         }
+        if (i == size)
+        {
+            printf("\n order number : ");
+            for (i = 0; i < size; i++)
+            {
+                printf(" %d", number[i]);
+            }
+        }
 
-    } while (i < size);
-
-
-    printf("\n order number : ");
-    for (i = 0; i < size; i++)
-    {
-        printf(" %d", number[i]);
-    }
-
+    } 
     return 0;
 }
